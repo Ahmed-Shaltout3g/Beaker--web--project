@@ -1,0 +1,637 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*
+{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+.clear-fix
+{
+    clear:both;
+}
+/* section1 */
+.navbar
+{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1;
+    background-color:  rgba(0, 0, 0, 0.246);;
+}
+.navbar .links
+{
+    margin-right: 10%;
+}
+
+.navbar img
+{
+    
+    width: 150px;
+    margin:20px 50px;
+    padding-left: 20px;
+
+}
+.navbar a
+{
+    margin:20px 10px ;
+    padding:10px;
+    float:right;
+    text-decoration: none;
+    color: white;
+    transition:color  1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover
+{
+    color:rgb(143, 84, 17);
+}
+
+@media screen and (max-width:880px)
+{
+    .navbar img
+    {
+        margin: 0px;
+        padding: 0px;
+        width:120px;
+    }
+}
+
+
+
+ .head
+{
+    height: 100vh;
+    background-image: url(photos/drew-coffman-1872.jpg);
+    background-size:cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+    position: relative;
+    
+
+}
+.layer
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.382); ;
+}
+
+.title
+{
+    width:100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:150px;
+    left: 0px;
+    box-sizing: border-box;
+}
+
+.title .welcome
+
+{
+    font-family: 'Dancing Script', cursive; ;
+    font-size: 30px;
+    margin: 4px;
+
+}
+.title h3
+{
+    margin: 15px;
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.title p
+{
+    margin: 10px;
+    padding:0px 150px;
+    font-size: 20px;
+}
+.title button
+{
+    margin:20px 10px;
+    padding:20px;
+    border-radius:10px;
+    border:none;
+    background-color: rgb(212, 219, 219);
+    transition: background-color 1s;
+    
+
+} 
+.title button:hover
+{
+    background-color:rgb(143, 84, 17);
+}
+@media screen and (max-width:800px) {
+    .title p
+
+    {
+        padding:0px 20px;
+        font-size:16px !important;;
+    }
+    .title h3
+    {
+        font-size: 34px !important;
+}
+    }
+
+
+
+
+    /* section2 */
+
+.history-continer
+{
+    width:80%;
+    margin: auto;
+    padding:60px 0px ;
+    
+    
+}
+
+.history-photo
+{
+    float: left;
+    width:40%;
+    padding:20px;
+}
+.history-photo img
+{
+    width: 100%;
+}
+.history
+{
+    float: left;
+    width: 60%;
+    padding-top:100px;
+    padding-left: 10px;
+    
+}
+.history p
+{
+    padding: 20px ;
+    color:rgb(175, 159, 136);
+}
+.history ul
+{
+    list-style-type:none ;
+}
+.history li
+{
+    padding:10px 20px;
+    color:rgb(175, 159, 136);
+
+
+}
+.history h2
+{
+    margin:10px;
+    padding:10px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+@media screen and  (max-width:779px)
+{
+    .history-photo
+{
+  width: 90%;
+  margin: 20px;
+}
+
+.history
+{
+  width: 100%;
+  padding-top:20px ;
+}
+} 
+/* section3 */
+
+
+.continer-location
+{
+    
+    background-color: rgba(210, 210, 210, 0.435);
+    padding: 40px 0px;
+    
+    
+}
+
+
+.continer-location .location-inner
+{
+    width:80%;
+    margin:auto;
+    padding:30px 0px ;
+    
+}
+.continer-location .location
+{
+    width:60%;
+    float: left;
+    padding: 50px;
+    margin-top: 20px;
+}
+.continer-location .location h2
+{
+    margin:10px;
+    padding:10px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.continer-location .location p
+{    
+    padding: 20px ;
+    color:rgb(175, 159, 136);
+}
+
+
+.continer-location .place-photo
+{
+    padding:10px;
+    width: 40%;
+    float: left;
+
+}
+.continer-location .place-photo img
+{
+    width: 100%;
+
+}
+@media screen and  (max-width:779px)
+{
+    .continer-location .place-photo
+{
+  width: 100%;
+  
+}
+
+.continer-location .location
+{
+  width: 100%;
+  margin-top:10px;
+  padding:10px;
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section4 */
+
+
+.beaker-container
+{
+    width:80%;
+    margin: auto;
+    padding:30px 0px ;
+}
+.beaker
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.beaker .iteam
+{
+    width:33.333333%;
+    float: left;
+    padding:20px
+    
+}
+
+.beaker .iteam img
+{
+    width:100%;
+} 
+
+.beaker h2
+{
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.beaker p
+{
+    margin-bottom: 20px 0px;
+    color:rgb(175, 159, 136);
+
+}
+    
+.beaker .iteam h4
+{
+    margin:20px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+@media screen and  (max-width:779px)
+{
+    .beaker .iteam
+{
+    width:100%;
+
+}
+}  
+
+
+/* section5 */
+
+
+.layer-contact
+{
+    
+    background-color: rgba(210, 210, 210, 0.435);
+
+}
+.contact-container
+{
+    width:80%;
+    margin: auto;
+    padding:30px 20px ;
+}
+.contact
+{
+    padding:50px;
+    width: 80%;
+    float: left;
+    width:50%;
+}
+
+.my-location
+{
+    float: left;
+    width: 50%;
+}
+
+.my-location iframe
+{
+    width: 80%;
+    height: 400px;
+    margin: 20px;
+}
+
+.contact h2
+{
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.contact p
+{
+    margin: 20px 20px;
+    color:rgb(175, 159, 136);
+}
+
+.contact li
+{
+    padding:10px 20px;
+    color:rgb(175, 159, 136);
+}
+
+
+
+@media screen and  (max-width:779px)
+{
+
+
+.contact
+{
+  width: 100%;
+  margin-top:10px;
+  padding:10px;
+}
+
+.my-location 
+{
+    width:100%;
+
+}
+} 
+
+
+/* seection6 */
+
+.details-layer
+{
+    background-color:rgba(0, 0, 0, 0.716);
+}
+
+.details-container
+{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.details
+{
+
+    width: 25%;
+    float: left;
+    padding: 20px;
+    text-align: left;
+
+}
+
+.details h5
+{
+    font-family: 'Playfair Display', serif;
+    margin: 15px;
+}
+.details li,.details p
+{
+   margin: 10px 0px;
+   color:rgb(175, 159, 136);
+   padding: 5px 0px;
+   font-size: 10px;
+   
+}
+
+.details p
+{
+    margin:10px 0px ;
+    padding:0px;
+    font-size: small;
+}
+
+.details .de-inner1
+{
+    background-image:url(photos/contact-details-map.png) ;
+    background-repeat:no-repeat ;
+    background-position: center center; 
+}
+
+.details  hr{
+        height: 1px;
+        background-color:rgba(175, 159, 136, 0.093);
+        border: none;
+        width: 95%;
+        margin: auto;
+    }
+
+@media screen and  (max-width:779px)
+{
+    .details
+{
+    width:100%;
+}
+}  
+
+
+
+/* section7 */
+
+
+.logo-container
+{
+    background-color: rgba(0, 0, 0, 0.861);
+}
+
+.logo
+{
+    text-align: center;
+    padding :20px;
+
+}
+
+.logo p
+{
+    margin: 20px;
+}
+
+.logo h4
+{
+    margin: 20px;
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive; ;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* h1 
+{
+    border:solid 3px black;
+    padding :20px ;
+    width :20%;
+    text-align: center;    
+    margin: auto;
+    position: relative;
+}
+h1::before
+{
+    content: ' ';
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 70%;
+    left: 20px;
+
+}
+h1::after
+{
+    content: ' ';
+    width: 4px;
+    height: 45px;
+    background-color: rgb(172, 41, 41);
+    position: absolute;
+    top: 73%;
+    left: 35px;
+
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.chef-photo
+{
+    width: 40%; 
+    float: left;
+}
+
+.chef-photo img
+{
+    width:100%;
+}
+
+
+.chef-discription
+{
+    float:left;
+    width: 60%;
+    text-align: center;
+    padding-top:250px ;
+}
+.chef-discription .one
+{
+    color: goldenrod;
+    font-size: 200%;
+    font-family:cursive;
+}
+
+.chef-discription p
+{
+    margin-top: 20px;
+    padding: 0px 100px;
+    color: rgb(77, 77, 76);
+}
+
+.chef-discription button
+{
+    margin: 20px 25px;
+    padding: 10px;
+    border: solid 1px black;
+    background-color: transparent;
+}
+.head
+{
+    height: 100vh;
+    background-image: url(photos/chef.jpg);
+    background-size: cover;
+    background-position: center center;
+} */
