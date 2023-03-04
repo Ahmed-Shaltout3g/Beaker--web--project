@@ -1,5 +1,12 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body
+{
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Alegreya', serif;
 }
 *
 {
@@ -10,202 +17,268 @@ body{
 }
 .clear-fix
 {
-    clear:both;
+    clear: both;
 }
+
+
+
+
 /* section1 */
 .navbar
 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.059);
     position: fixed;
-    top:0px;
-    width: 100%;
-    z-index: 1;
-    background-color:  rgba(0, 0, 0, 0.246);;
+    left: 0;
+    right: 0;
+    z-index: 99999999;
+    padding: 0px 15px;
 }
-.navbar .links
+.navbar .logo
 {
-    margin-right: 10%;
-}
-
-.navbar img
-{
+    width:15%;
     
-    width: 150px;
-    margin:20px 50px;
-    padding-left: 20px;
+}
+
+.navbar .logo img
+{
+    width: 100%;
+    
+}
+.navbar ul
+{
+    display: flex;
+    list-style-type: none;
+    
 
 }
-.navbar a
+
+.navbar ul li
 {
-    margin:20px 10px ;
-    padding:10px;
-    float:right;
-    text-decoration: none;
-    color: white;
-    transition:color  1s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 15px 20px;
 }
-a:hover
+
+.navbar ul li a
 {
-    color:rgb(143, 84, 17);
+    text-decoration: none;
+    font-family:'Alegreya', serif ;
+    Color:#e0dcd2;
+    font-size: 18px;
+    line-height: 32px;
+    transition: color 1s;
+}
+
+.navbar ul li a:hover
+{
+    color: #8e7754;
 }
 
 @media screen and (max-width:880px)
 {
-    .navbar img
+    .navbar ul
+    
     {
-        margin: 0px;
-        padding: 0px;
-        width:120px;
+       
     }
 }
 
 
 
- .head
+.header
 {
     height: 100vh;
     background-image: url(photos/drew-coffman-1872.jpg);
-    background-size:cover ;
     background-position: center center;
-    background-attachment: fixed;
-    padding: 20px;
-    position: relative;
-    
+    background-size:cover;
 
 }
-.layer
+
+.header
 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width:100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.382); ;
+    height: 100vh;
+    background-image: url(photos/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size:cover;
+
 }
 
-.title
+.header .layer
 {
-    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
-    position: absolute;
-    top:150px;
-    left: 0px;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.462);
 }
 
-.title .welcome
+.header .layer .title
+{
+    width:80%;
+    overflow: hidden;
+}
+.header .layer .welcome
 
 {
-    font-family: 'Dancing Script', cursive; ;
-    font-size: 30px;
-    margin: 4px;
+    font-size: 22px;
+    line-height: 41px;
+    Color:rgba(255, 255, 255, 0.92);
+    margin: 5px;
+    padding: 10px;
 
 }
-.title h3
+
+.header .layer h1
 {
-    margin: 15px;
-    font-size: 70px;
-    font-family: 'Playfair Display', serif;
+    font-size: 77px;
+    line-height: 91px ;
+    color: #ffffff;
     font-weight: 400;
+    margin: 5px;
+    padding-bottom: 10px;
 }
-.title p
+
+.header .layer p
 {
+    font-size: 24px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.92);
+    margin:10px 0px 20px;
+    padding: 10px;
+    font-weight: 400;
+
+}
+
+.header .layer button
+{
+    border-radius: 5px;
+    border: none;
     margin: 10px;
-    padding:0px 150px;
-    font-size: 20px;
-}
-.title button
-{
-    margin:20px 10px;
-    padding:20px;
-    border-radius:10px;
-    border:none;
-    background-color: rgb(212, 219, 219);
-    transition: background-color 1s;
+    padding: 20px 30px;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    color:#ffffff;
     
+}
 
-} 
-.title button:hover
+.header .layer .learn
 {
-    background-color:rgb(143, 84, 17);
+    background-color: #8e7754;
+    transition:background-color 0.7s;
+    
 }
-@media screen and (max-width:800px) {
-    .title p
 
-    {
-        padding:0px 20px;
-        font-size:16px !important;;
-    }
-    .title h3
-    {
-        font-size: 34px !important;
+.header .layer .learn:hover
+{
+    background-color: #ffffff;
+    color: black;
 }
+
+
+.header .layer .contact
+{
+    background-color: #ffffff00;
+    border: solid 2px #ffffff;
+    transition:background-color 0.7s;
+}
+
+.header .layer .contact:hover
+{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+@media screen and  (max-width:880px) 
+{
+    .header .layer .title p ,button
+    {
+        font-size: 16px;
+        padding: 0px;
     }
+     .header .layer .title h1
+     {
+        font-size: 50px;
+     }
+
+    
+}
 
 
-
-
-    /* section2 */
+/* section2 */
 
 .history-continer
 {
-    width:80%;
-    margin: auto;
-    padding:60px 0px ;
-    
-    
+    padding: 100px ;
+    margin: 20px;
 }
+
+.history-inner
+{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
 
 .history-photo
 {
-    float: left;
     width:40%;
-    padding:20px;
-}
+    padding: 29px 0px ;
+}   
 .history-photo img
 {
-    width: 100%;
+    width:100%;
 }
+
 .history
 {
-    float: left;
-    width: 60%;
-    padding-top:100px;
-    padding-left: 10px;
-    
+    width:55%;
+    padding: 40px 50px;
 }
-.history p
-{
-    padding: 20px ;
-    color:rgb(175, 159, 136);
-}
-.history ul
-{
-    list-style-type:none ;
-}
-.history li
-{
-    padding:10px 20px;
-    color:rgb(175, 159, 136);
 
-
-}
 .history h2
 {
-    margin:10px;
-    padding:10px;
-    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #303030;
+    font-weight: 400;
+    margin: 20px 5px;
 }
 
+.history p ,.history ul li
+{
+    Color:#686868;
+    font-size: 17px;
+    line-height: 32px;
+    margin: 20px 6px;
+    font-weight: 400;
+}
+
+.history ul
+{
+    list-style-type: none;
+}
 
 
 @media screen and  (max-width:779px)
 {
+
+    .history-continer
+{
+    padding: 100px 20px ;
+}
     .history-photo
 {
-  width: 90%;
-  margin: 20px;
+  width: 100%;
+  
 }
 
 .history
@@ -220,39 +293,45 @@ a:hover
 .continer-location
 {
     
-    background-color: rgba(210, 210, 210, 0.435);
-    padding: 40px 0px;
-    
+    background-color: rgba(210, 210, 210, 0.122);
+    padding: 100px  0px;
     
 }
 
 
 .continer-location .location-inner
 {
-    width:80%;
+    width:90%;
     margin:auto;
-    padding:30px 0px ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 .continer-location .location
 {
-    width:60%;
-    float: left;
-    padding: 50px;
+    width:45%;
+    padding: 50px 0px;
     margin-top: 20px;
 }
 .continer-location .location h2
 {
+    font-size: 32px;
+    line-height: 44px;
+    color: #303030;
+    font-weight: 400;
     margin:10px;
     padding:10px;
-    font-family: 'Playfair Display', serif;
 
 }
 
 .continer-location .location p
 {    
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
     padding: 20px ;
-    color:rgb(175, 159, 136);
+    color: #686868;;
 }
 
 
@@ -260,7 +339,6 @@ a:hover
 {
     padding:10px;
     width: 40%;
-    float: left;
 
 }
 .continer-location .place-photo img
@@ -270,18 +348,23 @@ a:hover
 }
 @media screen and  (max-width:779px)
 {
+    .continer-location .location-inner
+    {
+        width: 100%;
+        padding:0px 20px;
+    }
+
+
+    .continer-location .location
+{
+    width: 100%;
+}
     .continer-location .place-photo
 {
-  width: 100%;
-  
+    width: 100%;
 }
 
-.continer-location .location
-{
-  width: 100%;
-  margin-top:10px;
-  padding:10px;
-}
+
 } 
 
 
@@ -331,21 +414,27 @@ a:hover
 .beaker h2
 {
     margin: 20px;
-    font-family: 'Playfair Display', serif;
+    font-size: 30PX;
+    line-height: 41px;
+    color: #303030;
+    font-weight: 400;
 
 }
 
 .beaker p
 {
     margin-bottom: 20px 0px;
-    color:rgb(175, 159, 136);
-
+    color: #888;
+    font-weight: 400;
 }
     
 .beaker .iteam h4
 {
     margin:20px;
-    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #303030;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 
@@ -367,7 +456,7 @@ a:hover
 .layer-contact
 {
     
-    background-color: rgba(210, 210, 210, 0.435);
+    background-color: rgba(210, 210, 210, 0.122);
 
 }
 .contact-container
@@ -376,10 +465,9 @@ a:hover
     margin: auto;
     padding:30px 20px ;
 }
-.contact
+.contact-us
 {
-    padding:50px;
-    width: 80%;
+    padding:20px;
     float: left;
     width:50%;
 }
@@ -388,6 +476,7 @@ a:hover
 {
     float: left;
     width: 50%;
+    padding-left:30px ;
 }
 
 .my-location iframe
@@ -397,23 +486,32 @@ a:hover
     margin: 20px;
 }
 
-.contact h2
+.contact-us h2
 {
     margin: 20px;
-    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height:44px ;
+    color: #303030;
+    font-weight: 400;
 
 }
 
-.contact p
+.contact-us p
 {
     margin: 20px 20px;
-    color:rgb(175, 159, 136);
+    color: #686868;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
-.contact li
+.contact-us li
 {
     padding:10px 20px;
-    color:rgb(175, 159, 136);
+    color: #686868;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 
@@ -422,17 +520,21 @@ a:hover
 {
 
 
-.contact
+.contact-us
 {
-  width: 100%;
-  margin-top:10px;
-  padding:10px;
+    width: 100%;
 }
 
-.my-location 
+.my-location  iframe
 {
     width:100%;
+    height: 400;
+    margin: 0px;
 
+}
+.my-location
+{
+    width: 100%;
 }
 } 
 
@@ -441,13 +543,14 @@ a:hover
 
 .details-layer
 {
-    background-color:rgba(0, 0, 0, 0.716);
+    background-color:#403d38;
 }
 
 .details-container
 {
     width: 80%;
     margin: auto;
+    padding: 40px;
     
 }
 
@@ -463,23 +566,24 @@ a:hover
 
 .details h5
 {
-    font-family: 'Playfair Display', serif;
-    margin: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: #ffffff;
 }
 .details li,.details p
 {
-   margin: 10px 0px;
-   color:rgb(175, 159, 136);
-   padding: 5px 0px;
-   font-size: 10px;
-   
+    color: #969696;
+    line-height: 30px;
+    padding: 10px 0px;
+    font-size: 16px;
 }
 
 .details p
 {
     margin:10px 0px ;
-    padding:0px;
-    font-size: small;
 }
 
 .details .de-inner1
@@ -497,6 +601,13 @@ a:hover
         margin: auto;
     }
 
+.details li a
+{
+    text-decoration: none;
+    color:#686868;
+
+}
+
 @media screen and  (max-width:779px)
 {
     .details
@@ -512,26 +623,27 @@ a:hover
 
 .logo-container
 {
-    background-color: rgba(0, 0, 0, 0.861);
+    background-color:#2e2c29;
 }
 
-.logo
+.copy-write-logo
 {
     text-align: center;
     padding :20px;
 
 }
 
-.logo p
+.copy-write-logo p
 {
     margin: 20px;
+    color: #ffffff;
 }
 
-.logo h4
+.copy-write-logo h4
 {
     margin: 20px;
     color: aliceblue;
-    font-family: 'Dancing Script', cursive; ;
+    font-family: 'Dancing Script', cursive; 
     font-size: 20px;
 }
 
