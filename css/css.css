@@ -10,10 +10,8 @@ h1,h2,h3,h4,h5,h6
 }
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type:none;
+    
+    
 }
 .clear-fix
 {
@@ -28,30 +26,16 @@ h1,h2,h3,h4,h5,h6
 {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.059);
     position: fixed;
     left: 0;
     right: 0;
     z-index: 99999999;
     padding: 0px 15px;
 }
-.navbar .logo
-{
-    width:15%;
-    
-}
 
-.navbar .logo img
+.navbar-brand img
 {
-    width: 100%;
-    
-}
-.navbar ul
-{
-    display: flex;
-    list-style-type: none;
-    
-
+    width: 150px;
 }
 
 .navbar ul li
@@ -75,34 +59,18 @@ h1,h2,h3,h4,h5,h6
     color: #8e7754;
 }
 
-@media screen and (max-width:880px)
-{
-    .navbar ul
-    
-    {
-       
-    }
-}
 
 
 
 .header
 {
     height: 100vh;
-    background-image: url(photos/drew-coffman-1872.jpg);
+    background-image: url(../photos/drew-coffman-1872.jpg);
     background-position: center center;
     background-size:cover;
 
 }
 
-.header
-{
-    height: 100vh;
-    background-image: url(photos/drew-coffman-1872.jpg);
-    background-position: center center;
-    background-size:cover;
-
-}
 
 .header .layer
 {
@@ -211,7 +179,7 @@ h1,h2,h3,h4,h5,h6
 
 /* section2 */
 
-.history-continer
+/* .history-continer
 {
     padding: 100px ;
     margin: 20px;
@@ -242,7 +210,7 @@ h1,h2,h3,h4,h5,h6
 {
     width:55%;
     padding: 40px 50px;
-}
+} */
 
 .history h2
 {
@@ -268,131 +236,43 @@ h1,h2,h3,h4,h5,h6
 }
 
 
-@media screen and  (max-width:779px)
-{
-
-    .history-continer
-{
-    padding: 100px 20px ;
-}
-    .history-photo
-{
-  width: 100%;
-  
-}
-
-.history
-{
-  width: 100%;
-  padding-top:20px ;
-}
-} 
 /* section3 */
 
 
-.continer-location
+.location-section
 {
     
-    background-color: rgba(210, 210, 210, 0.122);
-    padding: 100px  0px;
+    background-color: rgba(210, 210, 210, 0.273);
+   
     
 }
 
 
-.continer-location .location-inner
-{
-    width:90%;
-    margin:auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-}
-.continer-location .location
-{
-    width:45%;
-    padding: 50px 0px;
-    margin-top: 20px;
-}
-.continer-location .location h2
+
+.location h2
 {
     font-size: 32px;
     line-height: 44px;
     color: #303030;
     font-weight: 400;
     margin:10px;
-    padding:10px;
+    padding-bottom:20px;
 
 }
 
-.continer-location .location p
+.location p
 {    
     font-size: 17px;
     line-height: 32px;
     font-weight: 400;
-    padding: 20px ;
+    padding: 10px ;
     color: #686868;;
 }
 
 
-.continer-location .place-photo
-{
-    padding:10px;
-    width: 40%;
-
-}
-.continer-location .place-photo img
-{
-    width: 100%;
-
-}
-@media screen and  (max-width:779px)
-{
-    .continer-location .location-inner
-    {
-        width: 100%;
-        padding:0px 20px;
-    }
-
-
-    .continer-location .location
-{
-    width: 100%;
-}
-    .continer-location .place-photo
-{
-    width: 100%;
-}
-
-
-} 
 /* section4 */
 
 
-.beaker-container
-{
-    width:80%;
-    margin: auto;
-    padding:30px 0px ;
-}
-.beaker
-{
-    text-align: center;
-    padding: 20px;
-}
-
-.beaker .iteam
-{
-    width:33.333333%;
-    float: left;
-    padding:20px
-    
-}
-
-.beaker .iteam img
-{
-    width:100%;
-} 
 
 .beaker h2
 {
@@ -411,7 +291,7 @@ h1,h2,h3,h4,h5,h6
     font-weight: 400;
 }
     
-.beaker .iteam h4
+.items h4
 {
     margin:20px;
     font-size: 22px;
@@ -423,14 +303,7 @@ h1,h2,h3,h4,h5,h6
 
 
 
-@media screen and  (max-width:779px)
-{
-    .beaker .iteam
-{
-    width:100%;
 
-}
-}  
 
 
 /* section5 */
@@ -502,22 +375,36 @@ h1,h2,h3,h4,h5,h6
 @media screen and  (max-width:779px)
 {
 
-
+.contact-title h2
+{
+    width: 100%;
+    padding: 0;
+}
 .contact-us
 {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+.my-location
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 .my-location  iframe
 {
     width:100%;
     height: 400;
     margin: 0px;
+    padding: 0;
 
 }
 .my-location
 {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 } 
 
@@ -596,6 +483,8 @@ h1,h2,h3,h4,h5,h6
     .details
 {
     width:100%;
+    padding: 0;
+    margin: 0;
 }
 }  
 
@@ -636,97 +525,3 @@ h1,h2,h3,h4,h5,h6
 
 
 
-/* h1 
-{
-    border:solid 3px black;
-    padding :20px ;
-    width :20%;
-    text-align: center;    
-    margin: auto;
-    position: relative;
-}
-h1::before
-{
-    content: ' ';
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    position: absolute;
-    top: 70%;
-    left: 20px;
-
-}
-h1::after
-{
-    content: ' ';
-    width: 4px;
-    height: 45px;
-    background-color: rgb(172, 41, 41);
-    position: absolute;
-    top: 73%;
-    left: 35px;
-
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.chef-photo
-{
-    width: 40%; 
-    float: left;
-}
-
-.chef-photo img
-{
-    width:100%;
-}
-
-
-.chef-discription
-{
-    float:left;
-    width: 60%;
-    text-align: center;
-    padding-top:250px ;
-}
-.chef-discription .one
-{
-    color: goldenrod;
-    font-size: 200%;
-    font-family:cursive;
-}
-
-.chef-discription p
-{
-    margin-top: 20px;
-    padding: 0px 100px;
-    color: rgb(77, 77, 76);
-}
-
-.chef-discription button
-{
-    margin: 20px 25px;
-    padding: 10px;
-    border: solid 1px black;
-    background-color: transparent;
-}
-.head
-{
-    height: 100vh;
-    background-image: url(photos/chef.jpg);
-    background-size: cover;
-    background-position: center center;
-} */

@@ -10,30 +10,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
 
 
     <!-- section1 -->
-    <div class="navbar">
-        <div class="logo">
-            <img src="photos/bakery-light-1.png" alt="logo">
+   
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+            <a class="navbar-brand   " href="#"><img src="photos/bakery-light-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
         </div>
-        <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li> <a href="about.html " >About</a></li>
-            <li><a href="#" >Our Offer</a></li>
-            <li><a href="#" >Gallery</a></li>
-            <li><a href="#" >Blog</a></li>
-            <li><a href="#" >Contact</a></li>
-        </ul>
-    </div>
+      </nav>
 
 
-    <div class="header">
-        <div class="layer">
-            <div class="title">
+
+    <div class="header mb-5">
+        <div class="layer d-flex justify-content-center">
+            <div class="title  ">
                 <span class="welcome"> Welcome to</span>
                 <h1>Family Bakery</h1>
                 <p>We're the biggest, best equipped and most advanced Bakery in the greater<br/> Los Angeles area.</p>
@@ -46,82 +68,96 @@
     
 
     <!-- section2 -->
-    <div class="history-continer">
-        <div class="history-inner">
-            <div class="history-photo">
-                <img src="photos/alexandru-stavrica-170390-800x760.jpg" alt="beaker">
-            </div>
-            <div class="history">
-                <h2>Who we are?</h2>
-                <p>We have been operating for over 30 years 
-                    and are Members of The Federation of Master Builders.
-                    We work on projects big and small from small residential
-                    extensions to full house. We are so happy with this theme
-                    . Everyday it make our lives better.
-                </p>   
-                <ul>
-                    <li>We care about environment.</li>
-                    <li>We are trusted by hundreds of clients.</li>
-                    <li>Social media loves us!</li>
-                    <li>This list is super easy to create.</li>
-                </ul>        
-            </div>
-        </div>    
-    </div>
-
-
-
-
-    <!-- section3 -->
-    <div class="continer-location">
-        <div class="location-inner">
-                <div class="location">
-                    <h2>Our Location</h2>
-                    <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
-                        <p> Story on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+    <section>
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-md-5 ">
+                    <div class="history-photo">
+                        <img src="photos/alexandru-stavrica-170390-800x760.jpg" class="w-100" alt="beaker">
+                    </div>
                 </div>
-            
-                <div class="place-photo">
-                    <img src="photos/full-2-800x640.jpg" alt="place">
+                <div class="col-md-5 offset-1">
+                    <div class="history">
+                        <h2>Who we are?</h2>
+                        <p>We have been operating for over 30 years 
+                        and are Members of The Federation of Master Builders.
+                        We work on projects big and small from small residential
+                        extensions to full house. We are so happy with this theme
+                        . Everyday it make our lives better.
+                        </p>   
+                        <ul>
+                            <li>We care about environment.</li>
+                            <li>We are trusted by hundreds of clients.</li>
+                            <li>Social media loves us!</li>
+                            <li>This list is super easy to create.</li>
+                        </ul>        
+                    </div>
                 </div>
+            </div>
         </div>
+    </section>
 
-    </div>
 
+
+
+ 
+
+<!-- section3 -->
+    <section class=" location-section my-5 py-5 ">
+        <div class="container my-5">
+            <div class="row justify-content-around ">
+                <div class="col-md-5">
+                    <div class="location mt-5">
+                        <h2>Our Location</h2>
+                        <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+                            <p> Story on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="place-photo">
+                        <img src="photos/full-2-800x640.jpg" class="w-100" alt="place">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 
     <!-- section4 -->
-    <div class="beaker-container">
-        <div class="beaker">
-        <h2>Our Baking</h2>
-        <p>Learn more about them. We have worked truly hard to make them perfect for every use.</p>
 
-        <div class="iteam">
-            <div class="inner">
-                <img src="photos/ben-garratt-134774-600x500.jpg" alt="braefk">
+    <div class="container py-5 text-center">
+        <div class="beaker">
+            <h2>Our Baking</h2>
+            <p>Learn more about them. We have worked truly hard to make them perfect for every use.</p>
+    
+        </div>
+        <div class="row justify-content-center gx-5">
+            <div class="col-md-4">
+                <div class="items">
+                    <img src="photos/clem-onojeghuo-206832-600x500.jpg" class="w-100" alt="braefk">
+                    <h4>Superior Breads</h4>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="items">
+                    <img src="photos/stas-ovsky-123540-600x500.jpg" class="w-100" alt="braefk">
+                    <h4>Superior Breads</h4>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="items">
+                    <img src="photos/ben-garratt-134774-600x500.jpg" class="w-100" alt="braefk">
                 <h4>Superior Breads</h4>
                 <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+                </div>
             </div>
+            
         </div>
-        <div class="iteam">
-            <div class="inner">
-                <img src="photos/stas-ovsky-123540-600x500.jpg" alt="braefk">
-                <h4>Superior Breads</h4>
-                <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
-            </div>
-        </div>
-        <div class="iteam">
-            <div class="inner">
-                <img src="photos/clem-onojeghuo-206832-600x500.jpg" alt="braefk">
-                <h4>Superior Breads</h4>
-                <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
-            </div>
-        </div>
-            <div class="clear-fix"></div>
-        
-        </div> 
-    </div>    
+    </div>
 
 
 <!-- section5 -->
@@ -145,8 +181,8 @@
     </div>
 
     <div class="my-location">
-        <iframe src="https://www.google.com/maps/@30.6881404,30.2411952,9z"></iframe>
 
+        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
     </div>
     <div class="clear-fix"></div>
  
@@ -236,5 +272,7 @@
     </div>
 
 </div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
